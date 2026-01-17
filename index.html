@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            width: 450px;
+            height: 650px;
+            margin: 0 auto;
+            display : grid;
+            grid-template-areas: 
+                " r r r r"
+                " a a a dv"
+                " sp h n f"
+                " q cq sx m"
+                " u d t p"
+                " z v c c";
+        }
+        #resultat{
+            outline: 1px solid black;
+            margin: 2.5px;
+            grid-area: r;
+        }
+        #ac{
+            grid-area: a;
+        }
+        #egal{
+            grid-area: c;
+        }
+        #virgule{
+            grid-area: v;
+        }
+        #diviser{
+            grid-area: dv;
+        }
+        #sept{
+            grid-area: sp;
+        }
+        #huit{
+            grid-area: h;
+        }
+        #neuf{
+            grid-area: n;
+        }
+        #fois{
+            grid-area: f;
+        }
+        #quatre{
+            grid-area: q;
+        }
+        #cinq{
+            grid-area: cq;
+        }
+        #six{
+            grid-area: sx;
+        }
+        #moins{
+            grid-area: m;
+        }
+        #un{
+            grid-area: u;
+        }
+        #deux{
+            grid-area: d;
+        }
+        #trois{
+            grid-area: t;
+        }
+        #plus{
+            grid-area: p;
+        }
+        #zero{
+            grid-area: z;
+        }
+        button{
+            background: whitesmoke;
+            margin:2.5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <span id="resultat"></span>
+        <button id="diviser" class="operateur" value="/">/</button>
+
+        <button id="sept" class="chiffre" value="7">7</button>
+        <button id="huit" class="chiffre" value="8">8</button>
+        <button id="neuf" class="chiffre" value="9">9</button>
+        <button id="fois" class="operateur" value="*">*</button>
+
+        <button id="quatre" class="chiffre" value="4">4</button>
+        <button id="cinq" class="chiffre" value="5">5</button>
+        <button id="six" class="chiffre" value="6">6</button>
+        <button id="moins" class="operateur" value="-">-</button>
+
+        <button id="un" class="chiffre" value="1">1</button>
+        <button id="deux" class="chiffre" value="2">2</button>
+        <button id="trois" class="chiffre" value="3">3</button>
+        <button id="plus" class="operateur" value="+">+</button>
+
+        <button id="virgule" value=",">,</button>
+        <button id="zero" class="chiffre" value="0">0</button>
+        <button id="egal" value="=">=</button>
+        <button id="ac">AC</button>
+        
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
